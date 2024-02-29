@@ -1,7 +1,3 @@
-.container {
-    margin: 1rem;
-    text-align: center;
-}
 .nav-container {
     display: flex;
     flex-direction: column;
@@ -21,19 +17,19 @@
     background: linear-gradient(rgb(241, 157, 0), rgb(255, 194, 64)); /* Orange to light orange gradient */
 }
   
-nav ul {
+.yellow-strip ul {
     list-style: none;
     display: flex;
     margin-left: 60px;
-    margin-block: 0px;
+    margin-block: 0px; /* Remove default margin from the link and the yellow strip */
 }
 
-nav a {
+.yellow-strip a {
     text-decoration: none;
     color: white;
 }
   
-nav ul li {
+.yellow-strip ul li {
     /* margin-right: 0px; */
     font-size: 15px;
     font-weight: 550;
@@ -44,13 +40,12 @@ nav ul li {
     margin-right: 0;
 } */
 
-nav ul li.active {
+.yellow-strip ul li.active {
     background-color: #0063e6;
     
 }
   
-nav ul li:hover {
+.yellow-strip ul li:hover {
     text-decoration: underline;
     color: white;
 }
-

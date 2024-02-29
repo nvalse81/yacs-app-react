@@ -1,5 +1,5 @@
-import './App.css';
 import Navbar from "./Navbar";
+import Footer from './Footer';
 import Home from "./pages/Home";
 import Sponsors from './pages/Sponsors';
 import Events from './pages/Events';
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="section-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Sponsors" element={<Sponsors />} />
@@ -19,6 +19,7 @@ function App() {
           <Route path="/Contactus" element={<Contactus />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

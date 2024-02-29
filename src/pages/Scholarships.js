@@ -1,3 +1,8 @@
+import './scholarhips.css';
 export default function Scholarships() {
-    return <h1>Scholarships</h1>
+    return (
+       <div className="scholarships-container">
+        <h1>Scholarships</h1>
+       </div>
+    );
 }

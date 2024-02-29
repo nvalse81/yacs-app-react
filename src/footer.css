@@ -1,0 +1,26 @@
+.copyright {
+    margin: 0rem;
+    text-align:center;
+}
+
+.footer-strip {
+    width: 100%;
+    background: linear-gradient(rgb(241, 157, 0), rgb(255, 194, 64)); /* Orange to light orange gradient */
+}
+  
+.footer-strip ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 600px;
+}
+
+.footer-strip ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-strip ul a:hover {
+    text-decoration: underline;
+    color: white;
+}

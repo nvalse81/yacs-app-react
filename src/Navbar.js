@@ -1,19 +1,23 @@
 import React from 'react';
 import logo from './image.png';
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import './navbar.css';
 
 export default function Navbar() {
   return (
     <nav className="nav-container">
       {/* Logo */}
-      <Link to="/" className="logo-container">
-        <img src={logo} alt="Logo" className='logo-image' />
-      </Link>
+      <div className="logo-container">
+        <Link to="/" >
+          <img src={logo} alt="Logo" className='logo-image' />
+        </Link>
+      </div>
+
 
       {/* Yellow strip with links */}
       <div className="yellow-strip">
         {/* Navigation links */}
-        <nav>
+        {/* <nav> */}
           <ul>
             <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/Events">Events</CustomLink>
@@ -21,7 +25,7 @@ export default function Navbar() {
             <CustomLink to="/Scholarships">Scholarships</CustomLink>
             <CustomLink to="/Contactus">Contact Us</CustomLink>
           </ul>
-        </nav>
+        {/* </nav> */}
       </div>
     </nav>
   );
