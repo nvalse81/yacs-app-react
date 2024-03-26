@@ -1,5 +1,90 @@
 .home-container {
-    height: 550px;
-    margin: 1rem;
-    text-align:center;
+    height: 800px;
 }
+
+.home-content-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 300px; /* vert , horizontal from the browser window */
+    background: linear-gradient(rgba(255, 226, 188, 0.644), rgb(255, 255, 255)); /* Orange to light orange gradient */
+}
+
+.content-1-img-src {
+    display: block; /* keep an eye newly added: to remove the extra space below the image */
+    height: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.384); /* Adds a solid black border with 2px width */
+    box-sizing: border-box; /* keeps height same since border is included in the height and width of the element */
+    border-radius: 10px;
+
+}
+
+.volunteering-ad-container {
+    width: 355px;
+    height: 280px;   /* effective height +padding = 300 */
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  .dark-blue {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .green {
+    color: green;
+  }
+
+  .black {
+    color: black;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  /* green strip */
+.green-strip {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 300px; /* vert , horizontal from the browser window */
+  }
+  
+  .gr-strip-container {
+    display: flex;
+    justify-content: space-between;
+    /* width: 30%;  */
+    /* 30% of the parent container this is culprit for limiting divs */
+  }
+  
+  .gr-strip-img {
+    height: 210px;
+    display: block;
+  }
+
+  .gr-strip-container div {
+    color: white;
+    text-wrap: wrap;
+    margin-left: 10px;
+    height: 210px;
+    width: 180px;
+  }
+
+  /* bottom content */
+  .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 300px; /* vert , horizontal from the browser window */ /* Orange to light orange gradient */
+  }
+  .bottom-content div {
+    height: 210px;
+    width: 32.3%;
+  }

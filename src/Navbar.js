@@ -18,13 +18,13 @@ export default function Navbar() {
       <div className="yellow-strip">
         {/* Navigation links */}
         {/* <nav> */}
-          <ul>
-            <CustomLink to="/">Home</CustomLink>
-            <CustomLink to="/Events">Events</CustomLink>
-            <CustomLink to="/Sponsors">Sponsors</CustomLink>
-            <CustomLink to="/Scholarships">Scholarships</CustomLink>
-            <CustomLink to="/Contactus">Contact Us</CustomLink>
-          </ul>
+        <ul>
+          <CustomLink to="/">Home</CustomLink>
+          <CustomLink to="/Events">Events</CustomLink>
+          <CustomLink to="/Sponsors">Sponsors</CustomLink>
+          <CustomLink to="/Scholarships">Scholarships</CustomLink>
+          <CustomLink to="/Contactus">Contact Us</CustomLink>
+        </ul>
         {/* </nav> */}
       </div>
     </nav>
@@ -36,10 +36,10 @@ function CustomLink({ to, children, ...props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
   return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
+    <Link to={to} {...props}>
+      <li className={isActive ? "active" : ""}>
         {children}
-      </Link>
-    </li>
+      </li>
+    </Link>
   )
 }

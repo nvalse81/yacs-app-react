@@ -4,27 +4,28 @@
 }
   
 .logo-container {
-    padding-left: 100px; /* Adjust margin as needed */
-    background-color: #fff3e9;
+    padding-left: 275px; /* Adjust margin as needed */
+    background: linear-gradient( rgb(255, 255, 255),rgba(255, 226, 188, 0.644)); /* Orange to light orange gradient */
 }
 
 .logo-image {
-    width: 400px;
+    width: 350px;
 }
 
 .yellow-strip {
     width: 100%;
     background: linear-gradient(rgb(241, 157, 0), rgb(255, 194, 64)); /* Orange to light orange gradient */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.329);
 }
   
 .yellow-strip ul {
     list-style: none;
     display: flex;
-    margin-left: 60px;
+    padding-left: 300px;
     margin-block: 0px; /* Remove default margin from the link and the yellow strip */
 }
 
-.yellow-strip a {
+.yellow-strip ul a {
     text-decoration: none;
     color: white;
 }
@@ -33,7 +34,7 @@
     /* margin-right: 0px; */
     font-size: 15px;
     font-weight: 550;
-    padding: 10px 25px; /* vert , horizontal */
+    padding: 8px 25px; /* vert , horizontal */
 }
   
 /* nav ul li:last-child {
@@ -41,11 +42,11 @@
 } */
 
 .yellow-strip ul li.active {
-    background-color: #0063e6;
-    
+    background: linear-gradient(rgb(0, 76, 241), rgb(64, 131, 255));
+    border-radius: 5px;
 }
   
 .yellow-strip ul li:hover {
-    text-decoration: underline;
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.24);
 }
